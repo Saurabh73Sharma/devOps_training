@@ -1,9 +1,12 @@
+@Library('checkhuman')_
+
 pipeline {
     agent any
     stages {
             stage("build") {
                 steps {
                     echo "testing build"
+					checkhuman 'Alex'
                     }
                 }
             stage("test") {
