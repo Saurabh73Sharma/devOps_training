@@ -6,7 +6,7 @@ pipeline {
             stage("build") {
                 steps {
                     echo "testing build"
-					checkhuman 'Saurabh'
+					sh 'pwd'
                     }
                 }
             stage("test") {
