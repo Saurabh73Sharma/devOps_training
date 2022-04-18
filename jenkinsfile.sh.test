@@ -20,6 +20,8 @@ pipeline {
                     echo "deploying application"
 					withCredentials([string(credentialsId: 'token_1234', variable: 'SECRET')]) {
                     echo "My secret text is '${SECRET}'"
+					withCredentials([string(credentialsId: 'test_token', variable: 'SECRET')]) {
+                    echo "My test token is '${SECRET}'"
 					}
                     }
                 }
