@@ -1,4 +1,4 @@
-@Library('pipeline-library-test')_
+@Library('check-human')_
 
 pipeline {
     agent any
