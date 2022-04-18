@@ -23,6 +23,7 @@ pipeline {
 					withCredentials([string(credentialsId: 'test_token', variable: 'SECRET')]) {
                     echo "My test token is '${SECRET}'"
 					}
+					}
                     }
                 }
            }
