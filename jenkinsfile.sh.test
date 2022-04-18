@@ -18,7 +18,9 @@ pipeline {
             stage("deploy") {
                 steps {
                     echo "deploying application"
-					checkhuman ''
+					withCredentials([string(credentialsId: 'token_1234', variable: 'SECRET')]) {
+                    echo "My secret text is '${SECRET}'"
+					}
                     }
                 }
            }
