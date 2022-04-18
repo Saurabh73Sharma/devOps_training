@@ -12,11 +12,13 @@ pipeline {
             stage("test") {
                 steps {
                     echo "testing application"
+					checkhuman 'Riya'
                     }
                 }
             stage("deploy") {
                 steps {
                     echo "deploying application"
+					checkhuman 'Sauriya'
                     }
                 }
            }
