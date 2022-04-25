@@ -5,13 +5,11 @@ pipeline {
     stages {
             stage("build") {
                 steps {
-                    echo "testing build"
 					checkhuman '100rav'
                     }
                 }
             stage("test") {
                 steps {
-                    echo "testing application"
 					checkhuman 'Riya'
                     }
                 }
