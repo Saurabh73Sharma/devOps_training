@@ -6,7 +6,7 @@ pipeline {
             stage("build") {
                 steps {
                     echo "testing build"
-					checkhuman('Saurabh')
+					checkhuman('100rav')
                     }
                 }
             stage("test") {
