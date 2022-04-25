@@ -5,12 +5,12 @@ pipeline {
     stages {
             stage("build") {
                 steps {
-					checkhuman('100rav')
+					checkhuman('100rav',2000)
                     }
                 }
             stage("test") {
                 steps {
-					checkhuman('Riya')
+					checkhuman('Riya',3000)
                     }
                 }
             stage("deploy") {
