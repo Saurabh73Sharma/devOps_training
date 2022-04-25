@@ -6,13 +6,13 @@ pipeline {
             stage("build") {
                 steps {
                     echo "testing build"
-					checkhuman('Saurabh','73')
+					checkhuman('Saurabh')
                     }
                 }
             stage("test") {
                 steps {
                     echo "testing application"
-					checkhuman('Riya','84')
+					checkhuman('Riya')
                     }
                 }
             stage("deploy") {
